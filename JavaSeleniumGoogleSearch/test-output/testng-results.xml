@@ -1,29 +1,167 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="2" passed="2">
+<testng-results skipped="0" failed="2" total="5" passed="3">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="16388" started-at="2013-11-29T14:43:14Z" finished-at="2013-11-29T14:43:30Z">
+  <suite name="Suite" duration-ms="46010" started-at="2013-11-29T14:57:17Z" finished-at="2013-11-29T14:58:03Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="16388" started-at="2013-11-29T14:43:14Z" finished-at="2013-11-29T14:43:30Z">
-      <class name="tests.GoogleSearchCR">
-        <test-method status="PASS" signature="setup()[pri:0, instance:tests.GoogleSearchCR@4f262c96]" name="setup" is-config="true" duration-ms="3076" started-at="2013-11-29T14:43:14Z" finished-at="2013-11-29T14:43:17Z">
+    <test name="Test" duration-ms="46010" started-at="2013-11-29T14:57:17Z" finished-at="2013-11-29T14:58:03Z">
+      <class name="tests.GoogleSearchFF">
+        <test-method status="PASS" signature="setup()[pri:0, instance:tests.GoogleSearchFF@1c11739d]" name="setup" is-config="true" duration-ms="7102" started-at="2013-11-29T14:57:17Z" finished-at="2013-11-29T14:57:24Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="testDoAnotherGoogleSearch()[pri:0, instance:tests.GoogleSearchCR@4f262c96]" name="testDoAnotherGoogleSearch" duration-ms="5431" started-at="2013-11-29T14:43:17Z" finished-at="2013-11-29T14:43:22Z">
+        <test-method status="PASS" signature="testDoGoogleSearch()[pri:0, instance:tests.GoogleSearchFF@1c11739d]" name="testDoGoogleSearch" duration-ms="8736" started-at="2013-11-29T14:57:24Z" finished-at="2013-11-29T14:57:32Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDoGoogleSearch -->
+      </class> <!-- tests.GoogleSearchFF -->
+      <class name="tests.GoogleSearchIE">
+        <test-method status="PASS" signature="setup()[pri:0, instance:tests.GoogleSearchIE@76757fad]" name="setup" is-config="true" duration-ms="3123" started-at="2013-11-29T14:57:32Z" finished-at="2013-11-29T14:57:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="FAIL" signature="testAddNewProduct()[pri:0, instance:tests.GoogleSearchIE@76757fad]" name="testAddNewProduct" duration-ms="5066" started-at="2013-11-29T14:57:36Z" finished-at="2013-11-29T14:57:41Z">
+          <exception class="org.openqa.selenium.NoSuchWindowException">
+            <message>
+              <![CDATA[Unable to get browser (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 6 milliseconds
+Build info: version: '2.37.0', revision: 'a7c61cbd68657e133ae96672cf995890bad2ee42', time: '2013-10-18 09:51:02'
+System info: host: 'ldnlpt2086', ip: '192.168.56.1', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_45'
+Session ID: fd09504f-3783-4fc3-9b88-af29b4e128b6
+Driver info: org.openqa.selenium.ie.InternetExplorerDriver
+Capabilities [{platform=WINDOWS, javascriptEnabled=true, elementScrollBehavior=0, ignoreZoomSetting=false, enablePersistentHover=true, ie.ensureCleanSession=false, browserName=internet explorer, enableElementCacheCleanup=true, unexpectedAlertBehaviour=dismiss, version=8, ie.usePerProcessProxy=false, ignoreProtectedModeSettings=false, cssSelectorsEnabled=true, requireWindowFocus=false, initialBrowserUrl=http://localhost:27648/, handlesAlerts=true, ie.forceCreateProcessApi=false, nativeEvents=true, browserAttachTimeout=0, ie.browserCommandLineSwitches=, takesScreenshot=true}]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchWindowException: Unable to get browser (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 6 milliseconds
+Build info: version: '2.37.0', revision: 'a7c61cbd68657e133ae96672cf995890bad2ee42', time: '2013-10-18 09:51:02'
+System info: host: 'ldnlpt2086', ip: '192.168.56.1', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_45'
+Session ID: fd09504f-3783-4fc3-9b88-af29b4e128b6
+Driver info: org.openqa.selenium.ie.InternetExplorerDriver
+Capabilities [{platform=WINDOWS, javascriptEnabled=true, elementScrollBehavior=0, ignoreZoomSetting=false, enablePersistentHover=true, ie.ensureCleanSession=false, browserName=internet explorer, enableElementCacheCleanup=true, unexpectedAlertBehaviour=dismiss, version=8, ie.usePerProcessProxy=false, ignoreProtectedModeSettings=false, cssSelectorsEnabled=true, requireWindowFocus=false, initialBrowserUrl=http://localhost:27648/, handlesAlerts=true, ie.forceCreateProcessApi=false, nativeEvents=true, browserAttachTimeout=0, ie.browserCommandLineSwitches=, takesScreenshot=true}]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:193)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:145)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:554)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:569)
+	at org.openqa.selenium.remote.RemoteWebDriver.getTitle(RemoteWebDriver.java:285)
+	at tests.GoogleSearchIE.testAddNewProduct(GoogleSearchIE.java:39)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchWindowException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAddNewProduct -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:tests.GoogleSearchIE@76757fad]" name="setup" is-config="true" duration-ms="3072" started-at="2013-11-29T14:57:41Z" finished-at="2013-11-29T14:57:44Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="FAIL" signature="testDoGoogleSearch()[pri:0, instance:tests.GoogleSearchIE@76757fad]" name="testDoGoogleSearch" duration-ms="5078" started-at="2013-11-29T14:57:44Z" finished-at="2013-11-29T14:57:49Z">
+          <exception class="org.openqa.selenium.NoSuchWindowException">
+            <message>
+              <![CDATA[Unable to get browser (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 18 milliseconds
+Build info: version: '2.37.0', revision: 'a7c61cbd68657e133ae96672cf995890bad2ee42', time: '2013-10-18 09:51:02'
+System info: host: 'ldnlpt2086', ip: '192.168.56.1', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_45'
+Session ID: af83cfa1-c1c8-4157-832f-31ae6dad2279
+Driver info: org.openqa.selenium.ie.InternetExplorerDriver
+Capabilities [{platform=WINDOWS, javascriptEnabled=true, elementScrollBehavior=0, ignoreZoomSetting=false, enablePersistentHover=true, ie.ensureCleanSession=false, browserName=internet explorer, enableElementCacheCleanup=true, unexpectedAlertBehaviour=dismiss, version=8, ie.usePerProcessProxy=false, ignoreProtectedModeSettings=false, cssSelectorsEnabled=true, requireWindowFocus=false, initialBrowserUrl=http://localhost:39195/, handlesAlerts=true, ie.forceCreateProcessApi=false, nativeEvents=true, browserAttachTimeout=0, ie.browserCommandLineSwitches=, takesScreenshot=true}]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchWindowException: Unable to get browser (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 18 milliseconds
+Build info: version: '2.37.0', revision: 'a7c61cbd68657e133ae96672cf995890bad2ee42', time: '2013-10-18 09:51:02'
+System info: host: 'ldnlpt2086', ip: '192.168.56.1', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_45'
+Session ID: af83cfa1-c1c8-4157-832f-31ae6dad2279
+Driver info: org.openqa.selenium.ie.InternetExplorerDriver
+Capabilities [{platform=WINDOWS, javascriptEnabled=true, elementScrollBehavior=0, ignoreZoomSetting=false, enablePersistentHover=true, ie.ensureCleanSession=false, browserName=internet explorer, enableElementCacheCleanup=true, unexpectedAlertBehaviour=dismiss, version=8, ie.usePerProcessProxy=false, ignoreProtectedModeSettings=false, cssSelectorsEnabled=true, requireWindowFocus=false, initialBrowserUrl=http://localhost:39195/, handlesAlerts=true, ie.forceCreateProcessApi=false, nativeEvents=true, browserAttachTimeout=0, ie.browserCommandLineSwitches=, takesScreenshot=true}]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:193)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:145)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:554)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:569)
+	at org.openqa.selenium.remote.RemoteWebDriver.getTitle(RemoteWebDriver.java:285)
+	at tests.GoogleSearchIE.testDoGoogleSearch(GoogleSearchIE.java:55)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchWindowException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDoGoogleSearch -->
+      </class> <!-- tests.GoogleSearchIE -->
+      <class name="tests.GoogleSearchCR">
+        <test-method status="PASS" signature="setup()[pri:0, instance:tests.GoogleSearchCR@76a5994]" name="setup" is-config="true" duration-ms="1379" started-at="2013-11-29T14:57:49Z" finished-at="2013-11-29T14:57:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="testDoAnotherGoogleSearch()[pri:0, instance:tests.GoogleSearchCR@76a5994]" name="testDoAnotherGoogleSearch" duration-ms="4730" started-at="2013-11-29T14:57:50Z" finished-at="2013-11-29T14:57:55Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testDoAnotherGoogleSearch -->
-        <test-method status="PASS" signature="setup()[pri:0, instance:tests.GoogleSearchCR@4f262c96]" name="setup" is-config="true" duration-ms="1876" started-at="2013-11-29T14:43:22Z" finished-at="2013-11-29T14:43:24Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:tests.GoogleSearchCR@76a5994]" name="setup" is-config="true" duration-ms="1793" started-at="2013-11-29T14:57:55Z" finished-at="2013-11-29T14:57:57Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="testDoGoogleSearch()[pri:0, instance:tests.GoogleSearchCR@4f262c96]" name="testDoGoogleSearch" duration-ms="5976" started-at="2013-11-29T14:43:24Z" finished-at="2013-11-29T14:43:30Z">
+        <test-method status="PASS" signature="testDoGoogleSearch()[pri:0, instance:tests.GoogleSearchCR@76a5994]" name="testDoGoogleSearch" duration-ms="5882" started-at="2013-11-29T14:57:57Z" finished-at="2013-11-29T14:58:03Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testDoGoogleSearch -->
       </class> <!-- tests.GoogleSearchCR -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>
