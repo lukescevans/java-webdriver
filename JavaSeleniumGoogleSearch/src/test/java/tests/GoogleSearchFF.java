@@ -15,7 +15,7 @@ import functions.*;
 public class GoogleSearchFF {
 	
 	WebDriver driver;
-	String searchTerm= "vosazzzzzzzzzzzzzzzzzzzzzz";
+	String searchTerm= "vosa";
 		
 	@BeforeMethod //@BeforeClass
 	public void setup() {
