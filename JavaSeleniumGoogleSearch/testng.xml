@@ -3,7 +3,7 @@
 <suite name="Suite" parallel="none">
   <test name="Test">
     <classes>
-      <class name="b.lsce"/>
+      <class name="SeleniumGoogleSearch.tests.GoogleSearchFF"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
