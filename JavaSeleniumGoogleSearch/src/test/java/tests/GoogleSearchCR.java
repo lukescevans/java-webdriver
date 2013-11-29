@@ -37,7 +37,7 @@ public class GoogleSearchCR {
 		GoogleHomePage googlehomepage = new GoogleHomePage(driver);
 		googlehomepage.doGoogleSearch(searchTerm);
 		
-		Utilities.wait(5);
+		Utilities.wait(1);
 		
 		//End test case
 		try {
@@ -47,7 +47,7 @@ public class GoogleSearchCR {
 		}
 	}
 	
-	@Test (enabled=false)
+	@Test (enabled=true)
 	public void testDoAnotherGoogleSearch() {          
 		driver.navigate().to(Constants.Url.GoogleHome);	
 
