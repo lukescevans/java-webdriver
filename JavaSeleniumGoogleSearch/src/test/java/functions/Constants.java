@@ -31,6 +31,9 @@ public class Constants {
     
     public static class IEDriverServer {
     	public final static String IE_DRIVER_SERVER= "src\\test\\resources\\IEDriverServer.exe";
-    	//C:\Users\luke.evans\workspace\b\src\test\resources\IEDriverServer.exe
+    }
+    
+    public static class CRDriverServer {
+    	public static final String CR_DRIVER_SERVER = "src\\test\\resources\\chromedriver.exe";
     }
 }

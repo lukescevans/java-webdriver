@@ -3,13 +3,12 @@
 <suite name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="b.GoogleSearchIE">
+      <class name="tests.GoogleSearchCR">
         <methods>
-          <include name="testAddNewProduct"/>
-          <include name="setup"/>
           <include name="testDoGoogleSearch"/>
+          <include name="setup"/>
         </methods>
-      </class> <!-- b.GoogleSearchIE -->
+      </class> <!-- tests.GoogleSearchCR -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

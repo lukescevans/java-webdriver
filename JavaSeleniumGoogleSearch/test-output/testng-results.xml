@@ -2,20 +2,20 @@
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="23730" started-at="2013-11-29T13:19:59Z" finished-at="2013-11-29T13:20:23Z">
+  <suite name="Default suite" duration-ms="14378" started-at="2013-11-29T13:46:35Z" finished-at="2013-11-29T13:46:49Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="23730" started-at="2013-11-29T13:19:59Z" finished-at="2013-11-29T13:20:23Z">
-      <class name="tests.GoogleSearchFF">
-        <test-method status="PASS" signature="setup()[pri:0, instance:tests.GoogleSearchFF@4f262c96]" name="setup" is-config="true" duration-ms="13916" started-at="2013-11-29T13:19:59Z" finished-at="2013-11-29T13:20:13Z">
+    <test name="Default test" duration-ms="14378" started-at="2013-11-29T13:46:35Z" finished-at="2013-11-29T13:46:49Z">
+      <class name="tests.GoogleSearchCR">
+        <test-method status="PASS" signature="setup()[pri:0, instance:tests.GoogleSearchCR@1858c80c]" name="setup" is-config="true" duration-ms="3923" started-at="2013-11-29T13:46:35Z" finished-at="2013-11-29T13:46:39Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="testDoGoogleSearch()[pri:0, instance:tests.GoogleSearchFF@4f262c96]" name="testDoGoogleSearch" duration-ms="9793" started-at="2013-11-29T13:20:13Z" finished-at="2013-11-29T13:20:23Z">
+        <test-method status="PASS" signature="testDoGoogleSearch()[pri:0, instance:tests.GoogleSearchCR@1858c80c]" name="testDoGoogleSearch" duration-ms="10422" started-at="2013-11-29T13:46:39Z" finished-at="2013-11-29T13:46:49Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testDoGoogleSearch -->
-      </class> <!-- tests.GoogleSearchFF -->
+      </class> <!-- tests.GoogleSearchCR -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
