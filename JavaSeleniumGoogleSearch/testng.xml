@@ -4,8 +4,8 @@
   <test name="Test">
     <classes>
       <class name="tests.GoogleSearchFF"/>
-            <class name="tests.GoogleSearchIE"/>
-                  <class name="tests.GoogleSearchCR"/>
+      <class name="tests.GoogleSearchIE"/>
+      <class name="tests.GoogleSearchCR"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

@@ -13,7 +13,7 @@ import org.openqa.selenium.support.pagefactory.*;
 
 import functions.*;
 
-public class GoogleSearchIE {
+public class TestGoogleSearchIE {
 	
 	static WebDriver driver;
 		
