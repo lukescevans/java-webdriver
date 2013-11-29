@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" parallel="none">
+  <test name="Test(failed)" parallel="none">
+    <classes>
+      <class name="tests.GoogleSearchCR">
+        <methods>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- tests.GoogleSearchCR -->
+      <class name="tests.GoogleSearchIE">
+        <methods>
+          <include name="setup"/>
+          <include name="testDoGoogleSearch"/>
+          <include name="testAddNewProduct"/>
+        </methods>
+      </class> <!-- tests.GoogleSearchIE -->
+      <class name="tests.GoogleSearchFF">
+        <methods>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- tests.GoogleSearchFF -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
