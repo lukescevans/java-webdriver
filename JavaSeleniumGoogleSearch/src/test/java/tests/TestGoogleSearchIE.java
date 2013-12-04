@@ -17,7 +17,7 @@ public class TestGoogleSearchIE {
 	
 	static WebDriver driver;
 		
-	@BeforeMethod //@BeforeClass
+	@BeforeMethod (enabled=false)
 	public void setup() {
 		//Setup IE Driver server parameters
 		File file = new File(Constants.IEDriverServer.IE_DRIVER_SERVER);
@@ -31,7 +31,7 @@ public class TestGoogleSearchIE {
 		//driver.navigate().to(Constants.Url.GoogleHome);					
 	}
 		
-	@Test
+	@Test (enabled=false)
 	public void testAddNewProduct() {         
 		driver.navigate().to(Constants.Url.GoogleHome);			
 		Utilities.wait(5);
@@ -46,7 +46,7 @@ public class TestGoogleSearchIE {
 		}
 	}
 	
-	@Test
+	@Test (enabled=false)
 	public void testDoGoogleSearch() {          
 		driver.navigate().to(Constants.Url.GoogleHome);	
 		Utilities.wait(5);
